@@ -2,7 +2,7 @@
 pipeline {
     agent any
     tools {
-        maven 'Maven-3.9.6' // The name we configured in Jenkins
+        maven 'Maven' // The name we configured in Jenkins
     }
     stages {
         stage('Build') {
