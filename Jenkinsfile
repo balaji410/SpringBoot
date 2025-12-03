@@ -1,6 +1,12 @@
 pipeline {
     agent any
  
+
+
+tools {
+        maven 'Maven' // Name of Maven installation configured in Jenkins
+      }
+ 
     environment {
         IMAGE_NAME = "kscodes/springboot-ci-cd"
         VERSION = "1.0.${BUILD_NUMBER}"
@@ -15,8 +21,10 @@ pipeline {
  
         stage('Build') {
             steps {
-                sh './mvnw clean package -DskipTests'
-            }
+            
+                sh 'mvn clean package -DskipTests'
+
+}
         }
  
         stage('Test') {
