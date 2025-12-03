@@ -23,7 +23,7 @@ jdk 'JAVA'
         stage('Build') {
             steps {
             
-                sh 'mvn -x clean package -DskipTests'
+                sh 'mvn -X clean package -DskipTests'
 
 }
         }
