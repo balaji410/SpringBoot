@@ -5,6 +5,7 @@ pipeline {
 
 tools {
         maven 'Maven' // Name of Maven installation configured in Jenkins
+java 'JAVA'
       }
  
     environment {
