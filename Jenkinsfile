@@ -5,8 +5,8 @@ pipeline {
 
 tools {
         maven 'Maven' // Name of Maven installation configured in Jenkins
-java 'JAVA'
-      }
+jdk 'JAVA'      
+}
  
     environment {
         IMAGE_NAME = "kscodes/springboot-ci-cd"
